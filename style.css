@@ -15,6 +15,7 @@ body{
 .wrapper {
     max-width: 60em;
     margin: 1em auto;
+    position: relative;
     
 }
 input {
@@ -38,7 +39,9 @@ article img {
 }
 
 .slider-dot-control {
-    
+    position: absolute;
+    bottom: 35px;
+    left: 42%;
     width: 100%;
     display: flex;
     gap: 10px;
@@ -119,15 +122,31 @@ article img {
     .slider-wrapper {
         border-radius: 0;
    }
+   body {
+    padding: 0 80px;
+}
 }
 /*---- MOBILE----*/
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
     .slider-wrapper {
         border-radius: 0;
    }
     .slider-wrapper .info {
         opacity: 0;
    }
+   .slider-dot-control{
+    bottom: 38px;
+    left: 0%;
+   }
+   .inner{
+    padding-bottom: 80px;
+   }
+   .info{
+    bottom: -80px;
+   }
+   body {
+    margin: 0 auto;
+}
 }
 @media only screen and (min-width: 850px) {
     body {
